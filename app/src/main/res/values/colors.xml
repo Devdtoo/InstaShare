@@ -10,6 +10,15 @@
 <!--    <color name="colorPrimaryRead">#F44336</color>-->
 
 
+<!--    KodDev-->
+    <color name="colorPrimary">#455cde</color>
+    <color name="colorPrimaryDark">#403d3d</color>
+    <color name="colorAccent">#c2bdbf</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#4cab03</color>
+    <color name="colorWindow">?android:attr/windowBackground</color>
+
+
 <!--    Medium-->
     <color name="purple_500">#9C27B0</color>
     <color name="deep_purple_500">#673AB7</color>
@@ -19,9 +28,9 @@
     <color name="light_blue_500">#03A9F4</color>
 
 <!--    InstaLogin-->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+<!--    <color name="colorPrimary">#3F51B5</color>-->
+<!--    <color name="colorPrimaryDark">#303F9F</color>-->
+<!--    <color name="colorAccent">#FF4081</color>-->
     <color name="dark_blue">#3023AE</color>
     <color name="purple">#c86dd7</color>
 

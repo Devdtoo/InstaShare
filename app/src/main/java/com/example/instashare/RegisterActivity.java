@@ -72,9 +72,11 @@ public class RegisterActivity extends AppCompatActivity {
                         TextUtils.isEmpty(full_name_str) ||
                         TextUtils.isEmpty(email_str) ||
                         TextUtils.isEmpty(password_str) ) {
+                    progressDialog.dismiss();
 
                     Toast.makeText(RegisterActivity.this, "All fields are Required to Fill...", Toast.LENGTH_SHORT).show();
                 } else if (password_str.length() <6) {
+                    progressDialog.dismiss();
                     Toast.makeText(RegisterActivity.this, "Password must have 6 characters or more", Toast.LENGTH_SHORT).show();
                 } else  {
                     register(username_str, full_name_str, email_str, password_str);
@@ -103,7 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
                     hashMap.put("username", username.toLowerCase());
                     hashMap.put("fullname", full_name);
                     hashMap.put("bio", "");
-                    hashMap.put("imageURL", "default");
+                    hashMap.put("imageurl", "default");
 //                    hashMap.put("status", "offline");
 //                    hashMap.put("search", username.toLowerCase());
 
