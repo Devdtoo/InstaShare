@@ -68,7 +68,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         final Post post = mPosts.get(position);
@@ -90,6 +90,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         nrLikes(holder.likes, post.getPostid());
         getCommetns(post.getPostid(), holder.comments);
 
+
+
         holder.like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,6 +106,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             }
         });
 
+        //Save Post and Remove Saved post
         holder.save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -398,7 +401,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                     imageView.setImageResource(R.drawable.ic_save_black);
                     imageView.setTag("saved");
                 } else{
-                    imageView.setImageResource(R.drawable.ic_save_black);
+                    imageView.setImageResource(R.drawable.ic_save);
                     imageView.setTag("save");
                 }
             }

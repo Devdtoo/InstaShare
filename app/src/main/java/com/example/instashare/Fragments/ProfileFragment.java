@@ -44,14 +44,14 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class ProfileFragment extends Fragment {
 
-    ImageView profile_pic, options;
-    TextView posts, followers, following, fullname, bio, username;
-    Button edit_profile;
+    private ImageView profile_pic, options;
+    private TextView posts, followers, following, fullname, bio, username;
+    private Button edit_profile;
 
     private List<String> mySaves;
 
-    FirebaseUser firebaseUser;
-    String profileid;
+    private FirebaseUser firebaseUser;
+    private String profileid;
 
     private RecyclerView recyclerView;
     private PhotosAdapter photosAdapter;
@@ -61,7 +61,7 @@ public class ProfileFragment extends Fragment {
     private PhotosAdapter photosAdapter_saves;
     private List<Post> postList_saves;
 
-    ImageButton my_photos, saved_photos;
+    private ImageButton my_photos, saved_photos;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -191,6 +191,9 @@ public class ProfileFragment extends Fragment {
 
         return view;
     }
+
+
+
 
     private void addNotification(){
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Notifications").child(profileid);
