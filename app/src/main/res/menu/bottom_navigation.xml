@@ -23,7 +23,7 @@
 
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_profile"
+        android:icon="@drawable/defaultprofile"
         android:title="" />
 
 
