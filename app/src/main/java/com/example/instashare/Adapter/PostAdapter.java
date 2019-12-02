@@ -77,6 +77,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                 .apply(new RequestOptions().placeholder(R.drawable.placeholder))
                 .into(holder.post_image);
 
+
+
         if (post.getDescription().equals("")){
             holder.description.setVisibility(View.GONE);
         } else {
@@ -275,7 +277,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     }
 
 
-    private void addNotification(String userid, String postid){
+    private void addNotification(String userid, String postid) {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Notifications").child(userid);
 
         HashMap<String, Object> hashMap = new HashMap<>();
