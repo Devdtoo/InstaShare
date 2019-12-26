@@ -10,7 +10,7 @@
     android:paddingTop="10dp"
     android:paddingEnd="24dp"
     android:paddingBottom="10dp"
-    tools:context=".LoginActivity">
+    tools:context="devdtoo.developer.instashare.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
             android:fontFamily="sans-serif-light"
-            android:src="@drawable/logo"
             android:text="@string/create_new_account"
             android:textColor="@color/gray_scale"
             android:textSize="30sp"
